@@ -1,23 +1,25 @@
-import logo from './logo.svg';
-import './App.css';
-
+import Page from "./pages/Page";
+import mur from "./img/murzilka.jpg";
+import kuz from "./img/kyz.jpg";
+import dog from "./img/Dog.jpg";
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Page
+        name="Мурзилка"
+        info="Первая наша кошка. Царица дома. Главный хишник"
+        url={mur}
+      />
+      <Page
+        name="Кузьмич"
+        info="Второй кот. Очень общительный и добрый"
+        url={kuz}
+      />
+      <Page
+        name="Тобик"
+        info="Приблудился щенком. Очень добрый и любвообильный"
+        url={dog}
+      />
     </div>
   );
 }
